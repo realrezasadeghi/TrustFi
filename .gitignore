@@ -75,3 +75,7 @@ yarn-error.log
 
 # Lock
 *.lock
+
+
+# Env
+.env
