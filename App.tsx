@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
+import { ThemeProvider } from '@/presentation/contexts';
 import { RootNavigation } from '@/presentation/navigation';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
@@ -8,7 +9,9 @@ function App(): React.JSX.Element {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
-        <RootNavigation />
+        <ThemeProvider>
+          <RootNavigation />
+        </ThemeProvider>
       </SafeAreaView>
     </SafeAreaProvider>
   );

@@ -60,7 +60,6 @@ const styles = StyleSheet.create({
   },
   tabBarStyle: {
     height: 70,
-    elevation: 0,
     paddingTop: 10,
     borderTopWidth: 0,
     paddingBottom: 10,
